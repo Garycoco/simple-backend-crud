@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended: false}))
 app.use("/api/products", productRoute)
 
 // Connecting to Mongo
-mongoose.connect("mongodb+srv://garymasinga:f5DPGutlFuWfju6y@backenddb.rt0v3pp.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB")
+mongoose.connect("<Connection string>")
 .then(() => {
     console.log("Database connected successfully")
     app.listen(3000, () => {
